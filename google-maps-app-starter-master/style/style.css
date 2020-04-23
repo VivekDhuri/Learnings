@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin:0;
+    padding:0;
+    width:100%; 
+    height:100vh;
+}
+
+#map {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 150px;
+    left:50px;
+    font-size: 70px;
+    color:#333;
+    z-index:100;
+}
+
+.search-container {
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    background-color: #454E53;
+    z-index: 100;
+    top: 230px;
+    left:50px;
+    border-radius:30px;
+    display: flex;
+}
+
+
+.search {
+    display: flex;
+    flex-grow:1;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-container input {
+    flex-grow: 1;
+    font-size: 25px;
+    background-color: transparent;
+    border:none;
+    color:white;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search i {
+    font-size: 25px;
+    color: white;
+}
+
+.store-list {
+    padding-left:20px;
+    padding-right:20px;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+.store-list-container {
+    position: absolute;
+    width: 400px;
+    z-index: 100;
+    background-color: white;
+    border-radius: 30px;
+    top:320px;
+    left:50px;
+    bottom: 30px;
+    display: flex;
+}
+
+.store-address {
+    font-size: 21px;
+    color: #514C4C;
+    margin-top: 30px;
+}
+
+.store-phone-number {
+    color:#B5ADAD;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.store-number {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color: #454E5E;
+    color: #B5ADAD;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.store-address span {
+    display: block;
+}
+
+
+.store-container-background {
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;/* align-items: center; */
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+    transition: all 0.2 ease-in-out;
+}
+
+.store-container-background:hover {
+    background-color: #ccc;
+}
+
+.store-info-container {
+    flex-grow: 1;
+}
+
+.store-container {
+    border-bottom: 1px solid #979797;
+    cursor: pointer;
+}
+
+.store-number-container {
+    display: flex;
+    align-items: center;
+}
